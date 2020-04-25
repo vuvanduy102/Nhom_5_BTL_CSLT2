@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79685D82-A804-46F0-9503-15587906ABF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>baitapnhom</RootNamespace>
+    <AssemblyName>baitapnhom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\microsoft.office.interop.excel_\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO.cs" />
+    <Compile Include="excel.cs" />
+    <Compile Include="exexcel - Copy %282%29.cs" />
+    <Compile Include="exexcel - Copy.cs" />
+    <Compile Include="exexcel.cs" />
+    <Compile Include="frmbaocaosachtruyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbaocaosachtruyen.Designer.cs">
+      <DependentUpon>frmbaocaosachtruyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbaocaotheothangquynam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbaocaotheothangquynam.Designer.cs">
+      <DependentUpon>frmbaocaotheothangquynam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaLam.designer.cs">
+      <DependentUpon>frmCaLam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchitietthuesach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchitietthuesach.Designer.cs">
+      <DependentUpon>frmchitietthuesach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchitiettrasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchitiettrasach.Designer.cs">
+      <DependentUpon>frmchitiettrasach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkhachhang.designer.cs">
+      <DependentUpon>frmkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlinhvuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlinhvuc.Designer.cs">
+      <DependentUpon>frmlinhvuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmloaisach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmloaisach.Designer.cs">
+      <DependentUpon>frmloaisach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmngonngu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmngonngu.Designer.cs">
+      <DependentUpon>frmngonngu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnhanvien.Designer.cs">
+      <DependentUpon>frmnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnhaxuatban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnhaxuatban.Designer.cs">
+      <DependentUpon>frmnhaxuatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsachtruyen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsachtruyen1.Designer.cs">
+      <DependentUpon>frmsachtruyen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtacgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtacgia.Designer.cs">
+      <DependentUpon>frmtacgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmthuesach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthuesach.designer.cs">
+      <DependentUpon>frmthuesach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtinhtrang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtinhtrang.Designer.cs">
+      <DependentUpon>frmtinhtrang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtop5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtop5.Designer.cs">
+      <DependentUpon>frmtop5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtrasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtrasach.Designer.cs">
+      <DependentUpon>frmtrasach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViPham.designer.cs">
+      <DependentUpon>frmViPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xuatexcel.cs" />
+    <EmbeddedResource Include="frmbaocaosachtruyen.resx">
+      <DependentUpon>frmbaocaosachtruyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbaocaotheothangquynam.resx">
+      <DependentUpon>frmbaocaotheothangquynam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaLam.resx">
+      <DependentUpon>frmCaLam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchitietthuesach.resx">
+      <DependentUpon>frmchitietthuesach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchitiettrasach.resx">
+      <DependentUpon>frmchitiettrasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkhachhang.resx">
+      <DependentUpon>frmkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlinhvuc.resx">
+      <DependentUpon>frmlinhvuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmloaisach.resx">
+      <DependentUpon>frmloaisach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmngonngu.resx">
+      <DependentUpon>frmngonngu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnhanvien.resx">
+      <DependentUpon>frmnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnhaxuatban.resx">
+      <DependentUpon>frmnhaxuatban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsachtruyen1.resx">
+      <DependentUpon>frmsachtruyen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtacgia.resx">
+      <DependentUpon>frmtacgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthuesach.resx">
+      <DependentUpon>frmthuesach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtinhtrang.resx">
+      <DependentUpon>frmtinhtrang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtop5.resx">
+      <DependentUpon>frmtop5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtrasach.resx">
+      <DependentUpon>frmtrasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViPham.resx">
+      <DependentUpon>frmViPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
